@@ -4,13 +4,13 @@ import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, si
 import { FirebaseOptions } from "firebase/app";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyC8bnp38xAw-ZDVch74vXABDrhxKtdVhvM",
-  authDomain: "appbarbercortesdelisboa.firebaseapp.com",
-  projectId: "appbarbercortesdelisboa",
-  storageBucket: "appbarbercortesdelisboa.firebasestorage.app",
-  messagingSenderId: "564795996987",
-  appId: "1:564795996987:web:5bc9aaec1490847947551e",
-  measurementId: "G-FE5R84694M"
+  apiKey: process.env.apiKey,
+  authDomain: process.env.authDomain,
+  projectId: process.env.projectId,
+  storageBucket: process.env.storageBucket,
+  messagingSenderId: process.env.messagingSenderId,
+  appId: process.env.appId,
+  measurementId: process.env.measurementId
 };
 
 const app = initializeApp(firebaseConfig);

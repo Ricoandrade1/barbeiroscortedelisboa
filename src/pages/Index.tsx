@@ -15,7 +15,7 @@ const Index = () => {
           Selecione seu portal de acesso
         </p>
         
-        <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto sm:grid-cols-1">
           <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer" onClick={() => navigate("/barber")}>
             <div className="space-y-4">
               <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto">
